@@ -18,7 +18,7 @@ function MapComp() {
 
   return (
     <>
-      <div id="map" style={{width:'500px',height:'500px'}}></div>
+      <div id="map" className='w-full h-full'></div>
     </>
   )
   

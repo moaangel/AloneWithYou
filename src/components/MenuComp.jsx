@@ -14,11 +14,11 @@ function MenuComp() {
     >
       <div className='container mx-auto'>
         <div className='flex justify-between py-5 text-white'>
-          <h1>Alone</h1>
+          <h1>Alone With You</h1>
           <nav className='flex gap-4'>
-            <button onClick={()=>handleNavigate('/diary')}>다이어리</button>
-            <button onClick={()=>handleNavigate('/map')}>추억찾기</button>
-            <button>대충버튼</button>
+            <button onClick={()=>handleNavigate('/main')}>홈</button>
+            <button onClick={()=>handleNavigate('/main/diary')}>다이어리</button>
+            <button onClick={()=>handleNavigate('/main/map')}>추억찾기</button>
             <button>대충버튼</button>
           </nav>
         </div>
