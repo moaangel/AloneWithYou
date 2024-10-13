@@ -1,0 +1,10 @@
+/* 페이드 인/아웃 애니메이션 */
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out; /* 페이드인 속도 */
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; /* 페이드아웃 속도 */
+}
