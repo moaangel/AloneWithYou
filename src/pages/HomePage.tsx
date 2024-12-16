@@ -18,7 +18,7 @@ function HomePage() {
             Alone with you,
           </p>
           <p className="text-6xl text-pink-100 w-full h-1/4 my-auto text-center flex justify-center items-center slide-in-right mb-32">
-            함께 하는 추억 쌓기
+          Write our own story together
           </p>
           <button
             className="text-2xl text-white w-1/4 md:w-1/5 h-1/6 mx-auto my-auto text-center flex justify-center items-center border-2 rounded-xl transition-all duration-300 hover:bg-pink-400"

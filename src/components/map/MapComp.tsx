@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 
-const {kakao} = window;
+const {kakao}: any = window;
 
 function MapComp() {
 

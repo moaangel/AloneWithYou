@@ -2,7 +2,9 @@ import React from 'react'
 
 function MainComp() {
   return (
-    <div>MainComp</div>
+    <div className='w-full h-full bg-pink-100'>
+      <div></div>
+    </div>
   )
 }
 

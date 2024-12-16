@@ -1,10 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
+import logo from '../../assets/logo.png'
 
 function MenuComp() {
     const navigate = useNavigate();
 
-    const handleNavigate = (path) => {
+    const handleNavigate = (path : string) => {
         navigate(path);
       };
 
@@ -14,12 +15,12 @@ function MenuComp() {
     >
       <div className='container mx-auto'>
         <div className='flex justify-between py-5 text-white'>
-          <h1>Alone With You</h1>
-          <nav className='flex gap-4'>
+          <img src={logo} className='w-8 cursor-pointer' onClick={()=>handleNavigate('/main')}></img>
+          <nav className='flex gap-5'>
             <button onClick={()=>handleNavigate('/main')}>홈</button>
             <button onClick={()=>handleNavigate('/main/diary')}>다이어리</button>
-            <button onClick={()=>handleNavigate('/main/map')}>추억찾기</button>
-            <button>대충버튼</button>
+            <button onClick={()=>handleNavigate('/main/map')}>추억의장소</button>
+            <button onClick={()=>handleNavigate('/main/chat')}>대화하기</button>
           </nav>
         </div>
       </div>
