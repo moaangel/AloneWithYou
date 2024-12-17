@@ -21,7 +21,7 @@ function HomePage() {
           Write our own story together
           </p>
           <button
-            className="text-2xl text-white w-1/4 md:w-1/5 h-1/6 mx-auto my-auto text-center flex justify-center items-center border-2 rounded-xl transition-all duration-300 hover:bg-pink-400"
+            className="text-2xl text-white w-1/4 md:w-1/5 h-1/6 mx-auto my-auto text-center flex justify-center items-center border-2 bg-gray-500 border-l-pink-300 rounded-xl transition-all duration-300 hover:bg-pink-400"
             onClick={handleNavigate}
           >
             입장하기

@@ -1,13 +1,13 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect, useRef, useCallback } from 'react'
 import { useNavigate } from 'react-router-dom'
 import logo from '../../assets/logo.png'
 
 function MenuComp() {
     const navigate = useNavigate();
 
-    const handleNavigate = (path : string) => {
+    const handleNavigate = useCallback((path : string) => {
         navigate(path);
-      };
+      },[]);
 
   return (
     <header

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import './Book.css'; 
 import { useNavigate } from 'react-router-dom';
 
@@ -10,12 +10,9 @@ interface BookProps {
 const BookComp: React.FC<BookProps> = ({ title, author }) => {
   const navigate = useNavigate()
 
-  const handleBookClick = () => {
-    navigate(`/diary/${title}`)
-  }
 
   return (
-    <div className="book" onClick={handleBookClick}>
+    <div className="book">
       <div className="book-cover">
         <div className='w-6/7 h-7 bg-pink-50 flex mx-auto rounded leading-relaxed px-1'>
           <h1>{title}</h1>

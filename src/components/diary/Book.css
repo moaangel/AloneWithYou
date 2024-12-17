@@ -20,7 +20,7 @@
   }
   
   .book-cover:hover {
-    transform: rotateY(-15deg);
+    transform: rotateY(-25deg);
   }
   
   .book-spine {
